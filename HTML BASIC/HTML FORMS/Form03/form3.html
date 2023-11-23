@@ -33,8 +33,7 @@
                     </p>
                     <p>
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="your secret" autocomplete="on"
-                            required>
+                        <input type="password" name="password" id="password" placeholder="your secret" required>
                     </p>
                     <p>
                         <label for="phoneNumber">Phone Number</label>
@@ -160,6 +159,10 @@
                     <textarea name="message" id="message" cols="60" rows="10"
                         placeholder="Write your message here."></textarea>
                 </fieldset>
+                <br><br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
             </form>
         </article>
     </main>
