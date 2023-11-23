@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How HTML forms work">
+    <meta name="keywords" content="html forms">
+    <title>HTML FORMS</title>
+</head>
+
+<body>
+    <header>
+        <h1>Different types of HTML forms.</h1>
+    </header>
+    <hr>
+    <main>
+        <article>
+            <h2>Contact us.</h2>
+            <p><b>We like to hear from you!</b></p>
+            <form action="https://httpbin.org/get" method="get"></form>
+
+            <p>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Walter" autocomplete="on" required
+                    autofocus>
+            </p>
+            <p>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Bruce" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="your secret" autocomplete="on"
+                    required>
+            </p>
+            <p>
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="1234567890" autocomplete="on"
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+            </p>
+            <p>
+                <label for="decade">Your decade</label>
+                <input type="number" name="decade" id="decade" min="1960" max="2020" step="10" value="1990">
+            </p>
+            <p>
+                <label for="cofee">Cofee</label>
+                <select name="cofee" id="cofee" multiple size="5">
+                    <optgroup label="Coffees">
+                        <option value="regular cofee">Regular cofee</option>
+                        <option value="black cofee">Black cofee</option>
+                        <option value="iced cofee" selected>Iced cofee</option>
+                    </optgroup>
+                    <optgroup label="Special drinks">
+                        <option value="latte">Latte</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="cortado">Cortado</option>
+                        <option value="americano">Americano</option>
+                    </optgroup>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+        </article>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <footer>
+        <p>&copy; No Copyright. This website is free and open source.</p>
+        <a href="#top">Back to top</a>
+    </footer>
+</body>
+
+</html>
