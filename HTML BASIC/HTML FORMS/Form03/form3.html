@@ -18,7 +18,7 @@
         <article>
             <h2>Contact us.</h2>
             <p><b>We like to hear from you!</b></p>
-            <form action="https://httpbin.org/get" method="get">
+            <form action="https://httpbin.org/get" method="get" target="_blank">
                 <fieldset>
                     <legend>Personal info</legend>
 
@@ -46,7 +46,7 @@
                     </p>
                     <p>
                         <label for="cofee">Cofee</label>
-                        <select name="cofee" id="cofee" multiple size="5">
+                        <select name="cofee" id="cofee" size="5" multiple>
                             <optgroup label="Coffees">
                                 <option value="regular cofee">Regular cofee</option>
                                 <option value="black cofee">Black cofee</option>
@@ -61,7 +61,9 @@
                             <option value="other">Other</option>
                         </select>
                     </p>
-
+                    <!-- The <datalist> element specifies a list of pre-defined options for an <input> element.
+Users will see a drop-down list of the pre-defined options as they input data.
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element. -->
                     <p>
                         <label for="drinks">Drinks</label>
                         <input type="text" name="drinks" id="drinks" list="drinks-list">
@@ -81,7 +83,8 @@
                 <br><br>
                 <!--
                 for="" attribute of <label> element should match name="" attribute of <input> element. All (name="") should be same for a group of radio buttons.
-                
+                The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+
                 The name attribute specifies that the radio button is part of a group of radio buttons with the "same name". The id attribute matches the ID of the label. The value attribute specifies the value that will be submitted when the radio button is selected.
             -->
                 <fieldset>
@@ -160,8 +163,9 @@
                         placeholder="Write your message here."></textarea>
                 </fieldset>
                 <br><br>
-                <button type="submit">Submit</button>
+                <button type="submit" onclick="alert('Sure to submit?')">Submit</button>
                 <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <!-- https://www.w3schools.com/html/html_form_attributes_form.asp -->
                 <button type="reset">Reset</button>
             </form>
         </article>
