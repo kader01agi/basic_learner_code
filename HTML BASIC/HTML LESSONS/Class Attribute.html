@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author" content="MD. ABDUL KADER">
+    <title>Class attribute</title>
+    <style>
+        .note {
+            font-size: 150%;
+            color: red;
+        }
+
+        .abc {
+            font-size: 200%;
+            color: rgb(0, 0, 255);
+            padding: 50px;
+        }
+
+        .def {
+            font-size: 200%;
+            color: rgb(0, 0, 255);
+            background-color: chartreuse;
+        }
+
+        .ghi {
+            font-size: 170%;
+            color: rgb(0, 0, 0);
+            background-color: rgba(0, 255, 0, .4);
+            text-align: center;
+        }
+
+        .jkl {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <p>In the following example we have <kbd>strong</kbd>, <kbd>b</kbd>, <kbd>i</kbd>, <kbd>em</kbd>,
+                <kbd>span</kbd>, elements with a class attribute with
+                the value of "note" / "abc".
+
+                <br><br>
+
+            <p class="ghi">The class attribute can be used on any HTML
+                element.</p>
+
+            <p class="ghi">Note: The class name is case sensitive!</p>
+        </h1>
+    </header>
+
+
+    <main>
+        <h2 class="ghi">Multiple Classes</h2>
+        <p class="def">We can use multiple classes in a single element.</p>
+        <p class="def">The syntax is <kbd>&lt;tag class="className className"&gt;&lt;/tag&gt;</kbd></p>
+
+        <p class="note jkl">Chapter Summary</p>
+        <ul>
+            <li>The HTML class attribute specifies one or more class names for an element</li>
+            <li>Classes are used by CSS and JavaScript to select and access specific elements</li>
+            <li>The class attribute can be used on any HTML element</li>
+            <li>The class name is case sensitive</li>
+            <li>Different HTML elements can point to the same class name</li>
+            <li>JavaScript can access elements with a specific class name with the getElementsByClassName() method</li>
+        </ul>
+
+        <br>
+
+        <h2 class="ghi">JavaScript can access elements with a specific class name with the
+            <kbd>getElementsByClassName("className")</kbd> method:
+        </h2>
+
+        <h1 class="note">My Important Heading</h1>
+        <h1 class="abc">My Important Heading</h1>
+        <h1 class="def">My Important Heading</h1>
+        <h1 class="ghi">My Important Heading</h1>
+        <h2 class="note">My Important Heading</h2>
+        <h3 class="note">My Important Heading</h3>
+        <h4 class="note">My Important Heading</h4>
+        <p class="abc">This is some important text.</p>
+        <p class="def">This is some important text.</p>
+
+        <br><br>
+
+        <h1>My <strong class="note">Important</strong> Heading</h1>
+        <p>My <strong class="note">Important</strong> Heading</p>
+        <p>This is some <b class="note">important</b> text.</p>
+        <p>My <i class="note">Important</i> Heading</p>
+        <p>My <em class="note">Important</em> Heading</p>
+        <p>This is some <span class="note">important</span> text.</p>
+
+        <br><br><br>
+
+        <h1>My <strong class="abc">Important</strong> Heading</h1>
+        <p>My <strong class="abc">Important</strong> Heading</p>
+        <p>This is some <b class="abc">important</b> text.</p>
+        <p>My <i class="abc">Important</i> Heading</p>
+        <p>My <em class="abc">Important</em> Heading</p>
+        <p>This is some <span class="abc">important</span> text.</p>
+
+        <br><br><br>
+
+        <h1>My <strong class="def">Important</strong> Heading</h1>
+        <p>My <strong class="def">Important</strong> Heading</p>
+        <p>This is some <b class="def">important</b> text.</p>
+        <p>My <i class="def">Important</i> Heading</p>
+        <p>My <em class="def">Important</em> Heading</p>
+        <p>This is some <span class="def">important</span> text.</p>
+
+        <br><br>
+
+
+
+    </main>
+    <footer>
+        <hr>
+        <p>&copy; No copyright.</p>
+        <br><br>
+        <a href="#top">Back to top</a>
+    </footer>
+</body>
+
+</html>
