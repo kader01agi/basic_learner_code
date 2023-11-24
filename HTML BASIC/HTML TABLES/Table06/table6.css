@@ -1,0 +1,73 @@
+/* .tone tr {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(252, 3, 3);
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+
+.tone th {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(252, 3, 3);
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+ */
+.tone table,
+.tone th,
+.tone td {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(252, 3, 3);
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+
+.tone th {
+    background-color: aqua;
+}
+
+.tone tr:nth-child(even) {
+    background-color: rgba(82, 247, 5, 0.3);
+}
+
+.tone tr:nth-child(odd) {
+    background-color: rgba(184, 175, 50, 0.45);
+}
+
+.tone tr:hover {
+    background-color: rgb(97, 20, 220);
+}
+
+
+
+.ttwo table,
+.ttwoth,
+.ttwo td {
+    border: 1px;
+    border-style: dashed;
+    border-color: black;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+
+.ttwo th {
+    background-color: aqua;
+}
+
+.ttwo tr:nth-child(even) {
+    background-color: rgba(29, 5, 247, 0.3);
+}
+
+.ttwo tr:nth-child(odd) {
+    background-color: rgba(50, 184, 77, 45%);
+}
+
+.ttwo tr:hover {
+    background-color: crimson;
+}
