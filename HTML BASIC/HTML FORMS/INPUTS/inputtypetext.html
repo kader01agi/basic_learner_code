@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author" content="MD. ABDUL KADER">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <title>INPUT type TEXT</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px;
+            border-color: black;
+            border-style: solid;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="background-color: rgba(47, 255, 47, 30%);max-width: 100%; max-height: fit-content;">
+        <h1 style="font-size: 5vw; text-align: center;">INPUT type TEXT</h1><br><br>
+        <nav style="text-decoration: none;">
+            <ul>
+                <!-- <li><a href="#sect1">Input Type Text</a></li> -->
+                <li><a href="#sect2">ID Attribute and FOR Attribute</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <br><br>
+    <main>
+        <section id="sect1">
+            <h2>Input Type Text</h2>
+            <form action="https://httpbin.org/get" method="get" target="_blank">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" spellcheck="true" lang="en"
+                    title="Enter your first name" placeholder="Enter your first name" autocomplete="name"><br><br>
+                <!-- for & id should be same.-->
+                <!--name must be meaningful, as it goes to server with user data.
+                    name groups same category of items.
+                -->
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" spellcheck="false" lang="en"
+                    title="Enter your last name" placeholder="Enter your last name" autocomplete="name">
+            </form>
+        </section>
+        <br><br>
+        <section id="sect2">
+            <h2>Attributes for TEXT</h2>
+            <p> &lt;label for="firstName"&gt;First Name&lt;/label&gt;
+            </p>
+            <p>&lt;input type="text" name="firstName" id="firstName" spellcheck="false" lang="en" title="Enter your
+                first
+                name"
+                placeholder="Enter your first name" autocomplete="name"&gt; </p>
+            <br><br>
+            <h2>ID Attribute and FOR Attribute</h2><br><br>
+            <h3>ID Attribute</h3>
+            <p style="font-size: 20px; text-align: justify;">The <kbd><b>id</b></kbd> attribute uniquely identifies an
+                HTML element within a web page. It's typically used to provide a reference point for styling, scripting,
+                or data access. The <kbd><b>id</b></kbd> attribute can accept any alphanumeric string with hyphens, but
+                it's recommended to use meaningful and descriptive names to enhance code readability and
+                maintainability.</p><br><br>
+
+            <h3>FOR Attribute</h3>
+            <p style="font-size: 20px; text-align: justify;">The <kbd><b>for</b></kbd> attribute is primarily used with
+                <kbd><b>label</b></kbd> elements. It associates the <kbd><b>label</b></kbd> element with the HTML
+                element specified by its value. When the user clicks the <kbd><b>label</b></kbd>, the focus is
+                transferred to the associated element, making it easier for users to interact with forms. <mark>The
+                    <kbd><b>for</b></kbd> attribute is typically used in conjunction with the <kbd><b>id</b></kbd>
+                    attribute of the associated element.</mark>
+            </p><br><br>
+            <h3>Relationship between <kbd><b>for</b></kbd> and <kbd><b>id</b></kbd></h3>
+            <p style="font-size: 20px; text-align: justify;">The <kbd><b>for</b></kbd> and <kbd><b>id</b></kbd>
+                attributes are related in the sense that the for attribute must always refer to an existing
+                <kbd><b>id</b></kbd> attribute on another HTML element. This ensures that there's a clear connection
+                between the label and the element it's associated with.
+            </p><br><br>
+            <h3><kbd><b>id</b></kbd> and <kbd><b>name</b></kbd> Attributes</h3>
+            <p style="font-size: 20px; text-align: justify;">The <kbd><b>id</b></kbd> and <kbd><b>name</b></kbd>
+                attributes in HTML are both used to
+                identify HTML elements, but they serve distinct
+                purposes and have different relationships to each other.</p><br><br>
+            <h3>Name Attribute</h3>
+            <p style="font-size: 20px; text-align: justify;">The <kbd><b>name</b></kbd> attribute is primarily used for
+                form elements <mark style="background-color: aqua;">to associate input values with specific names when
+                    submitting form data. This information is typically sent to the server when the form is
+                    submitted</mark>. <mark style="background-color: rgb(0, 255, 106);">The <kbd><b>name</b></kbd>
+                    attribute is also used to group related form elements together</mark>.</p><br><br>
+            <h3>Relationship between <kbd><b>id</b></kbd> and <kbd><b>name</b></kbd></h3>
+            <p style="font-size: 20px; text-align: justify;">While both <kbd><b>id</b></kbd> and name attributes
+                identify HTML elements, they fulfill different roles.
+                The <kbd><b>id</b></kbd> attribute is used for unique identification and referencing, while <mark>the
+                    <kbd><b>name</b></kbd> attribute is used for associating form data with names for processing or
+                    storage.</mark>
+            </p><br><br>
+            <p style="font-size: 20px; text-align: justify;">Here's a summary of the key differences between
+                <kbd><b>id</b></kbd> and <kbd><b>name</b></kbd>
+                attributes:
+            </p><br><br>
+            <table>
+                <tr>
+                    <th>Attribute</th>
+                    <th>Purpose</th>
+                    <th>Usage</th>
+                </tr>
+                <tr>
+                    <th><kbd><b>id</b></kbd></th>
+                    <td>Uniquely identifies an HTML element</td>
+                    <td>Assign to elements for CSS, JavaScript, or data access</td>
+                </tr>
+                <tr>
+                    <th><kbd><b>name</b></kbd></th>
+                    <td>Associates form input values with names for submission</td>
+                    <td>Assign to form elements for input data processing</td>
+                </tr>
+            </table><br><br>
+            <p style="font-size: 20px; text-align: justify;">In general, it's recommended to use id attributes for
+                elements that need to be uniquely identified or referenced in external code, while name attributes are
+                primarily used for form elements to associate input values with meaningful names.</p>
+        </section>
+    </main>
+    <footer style="background-color: rgba(50, 136, 200, 30%); font-size: 2vw;">
+        <hr>
+        <p>&copy;No Copyright.</p>
+        <p><a href="#top">Back to top</a></p><br>
+    </footer>
+</body>
+
+</html>
