@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author" content="MD. ABDUL KADER">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <title>input radio</title>
+</head>
+
+<body>
+
+    <header style="background-color: rgba(47, 255, 47, 30%);max-width: 100%; max-height: fit-content;">
+        <h1 style="font-size: 5vw; text-align: center;">Attributes for <kbd><b>&lt;input type="radio"&gt;</b></kbd>
+        </h1>
+        <br><br>
+        <hr>
+    </header>
+    <br><br>
+    <main>
+        <section>
+            <h2>input type="radio"</h2>
+            <article>
+                <h3>input type="radio"</h3>
+                <form action="https://httpbin.org/get" method="get" target="_blank">
+                    <fieldset>
+                        <legend>Give your specific choice</legend>
+
+                        <p>
+                            <label for="python">Python</label>
+                            <input type="radio" name="course" id="python" value="python" checked required>
+                        </p>
+                        <p>
+                            <label for="javascript">JavaScript</label>
+                            <input type="radio" name="course" id="javascript" value="javascript">
+                        </p>
+                        <p>
+                            <label for="php">PHP</label>
+                            <input type="radio" name="course" id="php" value="php">
+                        </p>
+                        <p>
+                            <label for="django">Django</label>
+                            <input type="radio" name="course" id="django" value="django">
+                        </p>
+                        <p>
+                            <label for="html">HTML</label>
+                            <input type="radio" name="course" id="html" value="html">
+                        </p>
+                        <p>
+                            <label for="css">CSS</label>
+                            <input type="radio" name="course" id="css" value="css">
+                        </p>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+
+        <section>
+            <h2>Attributes for <kbd><b>&lt;input type="radio"&gt;</b></kbd></h2><br><br>
+            <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
+                The HTML <kbd>input</kbd> element with the <kbd>type="radio"</kbd> attribute defines a radio button
+                input field. It provides several attributes to control the appearance, behavior, and association of
+                radio buttons within a <mark>group</mark> . Here are some of the key attributes for input elements with
+                the <kbd>type="radio"</kbd> attribute:
+            </p>
+            <p style="font-size: 20px; text-align: justify;"><b>Required</b>: This attribute makes the radio button
+                selection mandatory. Users must select one of the radio buttons in the group before submitting the form.
+            </p>
+            <p style="font-size: 20px; text-align: justify;"><b>id</b>: This attribute uniquely identifies the radio
+                button within a group. It's crucial for associating the radio button with its corresponding label and
+                for JavaScript interactions.
+            </p>
+            <p style="font-size: 20px; text-align: justify;"><strong>name</strong>: This attribute assigns a common name
+                to all radio buttons within a group. It ensures that only one radio button with the same name can be
+                selected at a time, forming a mutually exclusive selection.
+            </p>
+            <p style="font-size: 20px; text-align: justify;"><strong>value</strong>: This attribute specifies the value
+                that will be submitted for the selected radio button when the form is submitted. It allows you to
+                differentiate between radio buttons within the same group.
+            </p>
+            <p style="font-size: 20px; text-align: justify;"><strong>checked</strong>: This attribute indicates whether
+                the radio button is initially selected or not. It sets the default state of the radio button when the
+                page loads.
+            </p>
+            <p style="font-size: 20px; text-align: justify;"><strong>disabled</strong>: This attribute disables the
+                radio button, preventing users from selecting it. It's useful for controlling user interaction or hiding
+                specific options.
+            </p>
+            <!-- <p style="font-size: 20px; text-align: justify;"><strong>Autofocus</strong>: This attribute sets the input
+                field to
+                automatically receive focus when the page loads. It's useful for focusing users on the primary radio
+                input field in a form. -->
+            </p>
+            <p style="font-size: 20px; text-align: justify;"><strong>autofocus</strong>: This attribute disables the
+                radio button, preventing users from selecting it. It's useful for controlling user interaction or hiding
+                specific options.
+            </p>
+            <p style="font-size: 20px; text-align: justify;"><strong>form</strong>: This attribute specifies the form to
+                which the radio button belongs. It's necessary for associating the radio button with the form data when
+                it's submitted.
+            </p>
+            <p style="font-size: 20px; text-align: justify;"><strong>formaction</strong>: This attribute overrides the
+                action attribute of the form that the radio button belongs to. It specifies the URL where the form data
+                will be sent when the form is submitted.
+            </p>
+            <p style="font-size: 20px; text-align: justify;"><strong>formenctype</strong>: This attribute overrides the
+                enctype attribute of the form that the radio button belongs to. It specifies the encoding type used for
+                submitting form data, such as "application/x-www-form-urlencoded" or "multipart/form-data".
+            <p style="font-size: 20px; text-align: justify;"><strong>formmethod</strong>: This attribute overrides the
+                method attribute of the form that the radio button belongs to. It specifies the HTTP method used to
+                submit form data, such as "GET" or "POST".
+            </p>
+            <p style="font-size: 20px; text-align: justify;">By using these attributes effectively, you can create radio
+                button groups with clear associations, default selections, and interactive behavior, enhancing the user
+                experience for form data collection.
+            </p>
+        </section>
+        <br><br><br>
+    </main>
+    <footer style="background-color: rgba(50, 136, 200, 30%); font-size: 2vw;">
+        <hr>
+        <p>&copy;No Copyright.</p>
+        <p><a href="#top">Back to top</a></p><br>
+    </footer>
+</body>
+
+</html>

@@ -6,12 +6,13 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="author" content="MD. ABDUL KADER">
     <!-- <meta http-equiv="refresh" content="5"> -->
-    <title>input password</title>
+    <title>input radio</title>
 </head>
 
 <body>
+
     <header style="background-color: rgba(47, 255, 47, 30%);max-width: 100%; max-height: fit-content;">
-        <h1 style="font-size: 5vw; text-align: center;">Attributes for <kbd><b>&lt;input type="password"&gt;</b></kbd>
+        <h1 style="font-size: 5vw; text-align: center;">Attributes for <kbd><b>&lt;input type="radio"&gt;</b></kbd>
         </h1>
         <br><br>
         <hr>
@@ -19,68 +20,73 @@
     <br><br>
     <main>
         <section>
-            <h2>Contact Forms</h2>
+            <h2>input type="radio"</h2>
             <article>
-                <h3>Cotact us. We like to hear from you.</h3>
+                <h3>input type="radio"</h3>
                 <form action="https://httpbin.org/get" method="get" target="_blank">
                     <fieldset>
-                        <legend>Personal info</legend>
+                        <legend>Give your specific choice</legend>
+
                         <p>
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password" title="Your secret password"
-                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9\s]).{8,}" maxlength="32"
-                                size="20" autocomplete="off" required>
+                            <label for="python">Python</label>
+                            <input type="radio" name="course" id="python" value="python" checked required>
                         </p>
-                        <p><kbd>pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9\s]).{8,}"</kbd></p>
-                        <p><kbd>(?=.*\d)</kbd>: This part ensures that the password contains at least one digit (0-9).
+                        <p>
+                            <label for="javascript">JavaScript</label>
+                            <input type="radio" name="course" id="javascript" value="javascript">
                         </p>
-                        <p><kbd>(?=.*[a-z])</kbd>: This part ensures that the password contains at least one lowercase
-                            letter
-                            (a-z).</p>
-
-                        <p><kbd>(?=.*[A-Z])</kbd>: This part ensures that the password contains at least one uppercase
-                            letter (A-Z).
+                        <p>
+                            <label for="php">PHP</label>
+                            <input type="radio" name="course" id="php" value="php">
                         </p>
-
-                        <p><kbd>(?=.*[^a-zA-Z0-9\s])</kbd>: This part ensures that the password contains at least one
-                            special
-                            character (any character except letters, numbers, or whitespace).</p>
+                        <p>
+                            <label for="django">Django</label>
+                            <input type="radio" name="course" id="django" value="django">
+                        </p>
+                        <p>
+                            <label for="html">HTML</label>
+                            <input type="radio" name="course" id="html" value="html">
+                        </p>
+                        <p>
+                            <label for="css">CSS</label>
+                            <input type="radio" name="course" id="css" value="css">
+                        </p>
                     </fieldset>
                 </form>
             </article>
         </section>
 
         <section>
-            <h2>Attributes for <kbd><b>&lt;input type="password"&gt;</b></kbd></h2><br><br>
+            <h2>Attributes for <kbd><b>&lt;input type="radio"&gt;</b></kbd></h2><br><br>
             <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">
-                The HTML <kbd>input</kbd> element with the <kbd>type="password"</kbd> attribute is used to collect
-                passwords from users. It offers several attributes to control the input and masking of the password.
-                Here are some of the key attributes for input elements with the <kbd>type="password"</kbd> attribute:
+                The HTML <kbd>input</kbd> element with the <kbd>type="radio"</kbd> attribute is used to collect
+                radios from users. It offers several attributes to control the input and masking of the radio.
+                Here are some of the key attributes for input elements with the <kbd>type="radio"</kbd> attribute:
             </p>
             <p style="font-size: 20px; text-align: justify;"><b>Required</b>: This attribute indicates whether the input
                 field is
-                mandatory. Users must enter a password before submitting the form.
+                mandatory. Users must enter a radio before submitting the form.
             </p>
             <p style="font-size: 20px; text-align: justify;"><strong>Pattern</strong>: This attribute specifies a
                 regular expression
-                pattern that the password must match to be considered valid. It can be used to enforce specific
+                pattern that the radio must match to be considered valid. It can be used to enforce specific
                 complexity
-                or length requirements for passwords.
+                or length requirements for radios.
             </p>
             <p style="font-size: 20px; text-align: justify;"><strong>Placeholder</strong>: This attribute provides a
                 hint or suggestion
-                to users about the expected format of the password. It appears within the input field before the user
+                to users about the expected format of the radio. It appears within the input field before the user
                 enters
                 any text.
             </p>
             <p style="font-size: 20px; text-align: justify;"><strong>Autocomplete</strong>: This attribute indicates the
                 expected type of
-                password for autocomplete suggestions. <mark> Possible values include "new-password" for newly created
-                    passwords or "current-password" for existing passwords.</mark>
+                radio for autocomplete suggestions. <mark> Possible values include "new-radio" for newly created
+                    radios or "current-radio" for existing radios.</mark>
             </p>
             <p style="font-size: 20px; text-align: justify;"><strong>Autofocus</strong>: This attribute sets the input
                 field to
-                automatically receive focus when the page loads. It's useful for focusing users on the primary password
+                automatically receive focus when the page loads. It's useful for focusing users on the primary radio
                 input field in a form.
             </p>
             <p style="font-size: 20px; text-align: justify;"><strong>Size</strong>: This attribute specifies the visible
@@ -91,21 +97,21 @@
             <p style="font-size: 20px; text-align: justify;"><strong>MaxLength</strong>: This attribute sets the maximum
                 number of
                 characters that can be entered into the input field. It prevents users from entering excessively long
-                passwords.
+                radios.
             </p>
             <p style="font-size: 20px; text-align: justify;"><strong>Readonly</strong>: This attribute disables the
                 input field,
-                preventing users from modifying the password. It's useful for displaying pre-filled passwords or
+                preventing users from modifying the radio. It's useful for displaying pre-filled radios or
                 preventing
-                changes to existing passwords.
+                changes to existing radios.
             </p>
             <p style="font-size: 20px; text-align: justify;"><strong>Disabled</strong>: This attribute disables the
                 input field entirely,
                 preventing users from interacting with it. It's useful for making the input field inactive in scenarios
-                where password collection is not necessary.
+                where radio collection is not necessary.
             </p>
             <p style="font-size: 20px; text-align: justify;">By using these attributes effectively, you can ensure that
-                users provide strong and secure passwords while enhancing the overall user experience for password input
+                users provide strong and secure radios while enhancing the overall user experience for radio input
                 fields.
             </p>
         </section>
