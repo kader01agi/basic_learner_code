@@ -30,28 +30,28 @@ def sqrt(e):
 
 h = sumsq(sample)/(leng(sample) - 1)
 
-# print(sqrt(h))
+print(f"Answer of first question: {sqrt(h)}")
 
 
 
 #************************ Solution to Question 2 ************************
 
-input1 = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+# input1 = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
 
-# output 1
-output1 = []
-for i in input1:
-    for j in i:
-        x = j % 10
-        output1.append(x)
-# print(output1)
+# # output 1
+# output1 = []
+# for i in input1:
+#     for j in i:
+#         x = j % 10
+#         output1.append(x)
+# # print(output1)
 
-# Another approach to output 1
-for i in input1:
-    for j in i:
-        x = j % 10
-        print(x, end=" ")
-    print()
+# # Another approach to output 1
+# for i in input1:
+#     for j in i:
+#         x = j % 10
+#         print(x, end=" ")
+#     print()
 
 # Another approach to output 1
 input1 = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
@@ -94,3 +94,17 @@ for i in td_list:
         else:
             print("Odd", end=" ")
     print()
+
+output3_list = []
+for i in td_list:
+    sum = 0
+    for j in i:
+        sum += j
+    output3_list.append(sum)    
+print(output3_list)
+
+output4_list = []
+for i in output3_list:
+    if i % 2 == 0:
+        output4_list.append("Even")
+print(output4_list)

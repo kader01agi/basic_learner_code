@@ -1,51 +1,39 @@
-# input1 = int(input("what is input1? "))
+##************************ Solution to Question 1 ************************
+sample = [2, 4, 4, 4, 5, 5, 7, 9]
 
-# # output 1
-# output1 = input1 % 10
-# print(output1)
+def length_func(b):
+    count = 0
+    for _ in sample:
+        count += 1
+    return count
 
+def mean_x(c):
+    sum = 0
+    for i in sample:
+        sum += i
+    xb = sum/length_func(sample)
+    return xb
 
-# # output 2
-# if input1 % 2 == 0:
-#     print("Even")
-# else:
-#     print("Odd")
+def sumsq(d):
+    m = 0
+    for i in sample:
+        m += (i - mean_x(sample)) ** 2
+    return m
 
-# # output 3
-# output3 = []
-# if input1 % 2 == 0:
-#     output3.append(input1)
-#     print(output3)
-# else:
-#     print("Odd")
-
-# # output 4
-
-
-
-# sample = [2, 4, 4, 4, 5, 5, 7, 9]
-# def my_sqrt(x):
-#   if x < 0:
-#     raise ValueError("Cannot calculate square root of a negative number")
-#   elif x == 0:
-#     return 0
-#   else:
-#     guess = 1
-#     while guess * guess <= x:
-#       guess += 1
-#     return guess - 1
-  
-
-def my_sqrt(e):
-#   if x < 0:
-#     raise ValueError("Cannot calculate square root of a negative number")
-#   elif x == 0:
-#     return 0
-#   else:
+def sqrt(e):
     num = 1
     while num * num <= e:
         num += 1
     return num - 1
+
+
+h = sumsq(sample)/(length_func(sample) - 1)
+
+print(f"Answer of first question: {sqrt(h)}")
+
+
+
+#************************ Solution to Question 2 ************************
 
 
 # Code for getting output 1.
@@ -93,7 +81,7 @@ for i in input1[0]:
 odd_even_two_d_list.append(oe1)
 
 oe2 = []
-for i in input1[0]:
+for i in input1[1]:
     if i % 2 == 0:
         oe2.append("Even")
     else:
@@ -101,7 +89,7 @@ for i in input1[0]:
 odd_even_two_d_list.append(oe2)
 
 oe3 = []
-for i in input1[0]:
+for i in input1[2]:
     if i % 2 == 0:
         oe3.append("Even")
     else:
@@ -109,8 +97,8 @@ for i in input1[0]:
 odd_even_two_d_list.append(oe3)
 
 oe4 = []
-for i in input1[0]:
-    if i % 4 == 0:
+for i in input1[3]:
+    if i % 2 == 0:
         oe4.append("Even")
     else:
         oe4.append("Odd")
